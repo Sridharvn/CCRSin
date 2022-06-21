@@ -6,8 +6,9 @@
         <v-app-bar-nav-icon>
           <v-img class="shrink mr-2" contain src="./assets/ccrs-logo.png" transition="scale-transition" width="60" />
         </v-app-bar-nav-icon>
-        <v-toolbar-title>
-          <strong>Oncology 2022</strong>
+        <v-toolbar-title id="appbar">
+          <strong>
+          &nbsp;Cancer Control & Research Society</strong>
         </v-toolbar-title>
       </div>
       <template v-slot:extension>
@@ -30,7 +31,7 @@
         </v-tabs>
       </template>
       <v-spacer></v-spacer>
-      <drop-down :DownloadsLinks="DownloadsLinks" :name="Download" id="DropDown"></drop-down>
+      <!-- <drop-down :DownloadsLinks="DownloadsLinks" :name="Download" id="DropDown"></drop-down> -->
 
     </v-app-bar>
     <v-main>
@@ -47,10 +48,12 @@
 <script>
 import axios from "axios";
 // import gsap from "gsap";
-import DropDown from "./components/DropDown.vue";
+// import DropDown from "./components/DropDown.vue";
 import WebsiteFooter from "./components/WebsiteFooter.vue";
 export default {
-  components: { DropDown, WebsiteFooter },
+  components: { 
+    // DropDown, 
+  WebsiteFooter },
   name: "App",
 
   data: () => ({
@@ -143,6 +146,7 @@ export default {
 #appbar {
   background-color: var(--appBar-color);
   color: var(--secondary-color);
+  font-size: xx-large;
 }
 
 * {
@@ -170,9 +174,9 @@ p {
 }
 
 
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 594px) {
   #appbar {
-    font-size: x-small;
+    font-size: large;
   }
 
   #DropDOWN {

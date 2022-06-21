@@ -14,7 +14,7 @@
       <br>
     </main>
     <aside>
-      <img src="./../assets/Le_Meridian1.jpg" alt="" style="max-height: 90vh; max-width: 55vw;" />
+      <img src="./../assets/Le_Meridian1.jpg" alt="" style="max-height: 90vh; max-width: 55vw;" id="image1" />
       <!-- <img src="./../assets/pexels-mart-production-7089017.jpg" alt="" style="height:90vh;width:100vh; "> -->
     </aside>
   </div>
@@ -29,6 +29,10 @@
 
 aside {
   display: flex;
+}
+#image1{
+  /* change to black and white */
+  filter: grayscale(50%);
 }
 
 main {

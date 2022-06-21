@@ -10,7 +10,7 @@ div {
 
 }
 
-/* #image {
-    mix-blend-mode: multiply;
-} */
+#image {
+    filter: grayscale(60%);
+}
 </style>

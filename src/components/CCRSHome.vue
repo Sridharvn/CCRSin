@@ -1,15 +1,12 @@
 <template>
   <div id="home">
     <main>
-      <h2>
-        International Conference on Multidisciplinary Management of Common
-        Malignancies
-      </h2>
-      <h4 style="color:var(--text-color)">2022 October 14,15 and 16</h4>
-      <h5>Organised by : CCRS</h5>
-      <h5> VENUE : HOTEL Le Meridien, KOCHI</h5>
-      <h5> Email : oncology2022india@gmail.com</h5>
-      <h5>Website : www.oncology2022.in</h5>
+      <h1>
+        Cancer Control & Research Society (CCRS)
+      </h1>
+      
+      <h3>Cancer Control & Research Society is a charitable organisation registered as per Act XII of 1955. The society is involved in cancer control activities by providing cancer care, palliative home care, assistance to suffering cancer patients, cancer awareness camps, continuing medical education programmes and international and national multidisciplinary oncology conferences.</h3>
+      
       <br>
     </main>
     <aside>
@@ -43,7 +40,7 @@ main {
   color: var(--secondary-color)
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   #home {
     flex-direction: column;
   }
