@@ -1,10 +1,17 @@
 :root {
-    --primary-color: #C9D8F9;
+    --primary-color: #D9DADC;
+    --appBar-color: #c2c3c5;
+    --Tab-color: #a7a7a8;
+    --TabSlider-color: #C9CDD0;
+    --secondary-color: #686870;
+    --text-color: #575B5E;
+    /* Oncology app colors */
+    /* --primary-color: #C9D8F9;
     --appBar-color: #b6cbf9;
     --Tab-color: #a6c1fb;
     --TabSlider-color: rgb(0, 128, 255);
     --secondary-color: #47475A;
-    --text-color: #204827;
+    --text-color: #204827; */
     /* Crowne Plaza Colors */
     /* --primary-color: #44416E;
     --appBar-color: #413f69;

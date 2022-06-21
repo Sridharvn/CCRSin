@@ -5,7 +5,7 @@
                 <!--Crowne Plaza Color -->
                 <!-- <v-btn v-bind="attrs" v-on="on" color="error"> -->
                 <!-- <v-btn v-bind="attrs" v-on="on" color="primary"  id="dropDown"> -->
-                <v-btn v-bind="attrs" v-on="on" color="primary">
+                <v-btn v-bind="attrs" v-on="on" color="white">
                     <v-icon>mdi-download</v-icon>
                     Downloads
                 </v-btn>

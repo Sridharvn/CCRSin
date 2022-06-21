@@ -1,5 +1,13 @@
 <template>
   <div class="home">
+    <CCRSHome></CCRSHome>
+    <v-spacer></v-spacer>
+    <v-row>
+      <v-col>
+        <DetailsText :DetailstextData="DetailstextData"></DetailsText>
+      </v-col>
+    </v-row>
+    <h1>Our Recent Event</h1>
     <home-main></home-main>
     <!-- <br /><br /> -->
     <!-- todo Card Code -->
@@ -54,6 +62,7 @@ import DetailsText from "../components/DetailsText.vue";
 // import InstructionsForPreperation from "../components/InstructionsForPreperation.vue";
 import Table from "../components/Table.vue";
 import HotelsDetails from "../components/HotelsDetails.vue";
+import CCRSHome from '../components/CCRSHome.vue';
 
 export default {
   name: "Home",
@@ -64,6 +73,7 @@ export default {
     // InstructionsForPreperation,
     Table,
     HotelsDetails,
+    CCRSHome,
   },
   mounted() {
     //
@@ -95,6 +105,29 @@ export default {
         },
       ],
       DetailstextData: {
+        Header: "Greetings from Kochi",
+        wish: "Dear Collegue,",
+        Details:
+          "We are extremely happy to welcome you all to Kochi the Queen of Arabian Sea for our international conference on Multidisciplinary Management of Geneto Urinary, Gynaecologic and Pelvic Malignancies. Highly reputed international faculty from U.K, U.S.A, Australia, Canada, besides so many distinguished national faculty from top most academic institutions such as TMH Mumbai, All India Institutes, Appolo Hospitals, Regional Cancer Centers in our country, have all consented to participate. This conference would be of immense benefit to practising Oncologists, Gynaecologists, Urologists, Gastro Entrologists, Pathologists and residents of all specialities. There will be an exciting trade exhibition. The residents and PG students have the opportunity to present posters, paper and may also participate in quiz programs designed for different specialities. The best oral and paper presentation will be awarded gold, silver and bronze medals. Kindly note that during Oncology 2018 following doctors were awarded fellowships.",
+        Details2:
+          " International fellowship - Medical Oncology : Dr. Sadvik Raghuram MD DM (Amrita Institute of Medical Sciences)- Rs. 2Lacs. National fellowship - Medical Oncology : Dr. Sahli Bamroo MD DM (Amrita Institute of Medical Sciences) - Rs. 0.75Lacs. International fellowship - Radiation Oncology : Dr. Vishnu H Lal MD (Tata Memorial Hospital Kolkata) - Rs. 2 Lacs. National fellowships - Radiation Oncology : Dr. Daliya Thomas MD (Govt Medical College, Trivandrum)- Rs. 0.75 Lacs., Dr. Abul Hussain MD (Govt Medical College Trivandrum)- Rs. 0.75 Lacs. So residents and PG students may also compete and win national / international fellowships for undergoing special training in top centers in India or other countries by attending this conference. You have to apply sufficiently in advance for the same.",
+        Details3:
+          " Kindly give vide publicity for the academic program amongst your collegues, residents and PG students to make it a grand success. Kindly visit the website www.oncology2022.in periodically for updated information.Hoping to see you all.",
+        Thanks: "Thanking you, Sincerely,",
+        Footer1: {
+          name: "Prof. Dr. C.S. Madhu MD, DNB",
+          designation: "Chairman,",
+          email: "Email : dr.csmadhu@gmail.com",
+          phone: "Phone : +91-9387103803",
+        },
+        Footer2: {
+          name: "Dr. Unni S. Pillai MD, DM",
+          designation: "Secretary,",
+          email: "Email : druspillai@gmail.com",
+          phone: "Phone : +91-7598563161",
+        },
+      },
+      DetailstextData2: {
         Header: "Greetings from Kochi",
         wish: "Dear Collegue,",
         Details:
