@@ -1,10 +1,17 @@
 :root {
+    /* --primary-color: #E9E0E3;
+    --appBar-color: #c5c0c2;
+    --Tab-color: #a19fa0;
+    --TabSlider-color: #5e5b5c;
+    --secondary-color: #40515c;
+    --text-color: #2a363d; */
+    /* Old */
     --primary-color: #D9DADC;
     --appBar-color: #c2c3c5;
     --Tab-color: #a7a7a8;
     --TabSlider-color: #C9CDD0;
-    --secondary-color: #686870;
-    --text-color: #3e4042;
+    --secondary-color: #3e4042;
+    --text-color: #4d4f52;
     /* Oncology app colors */
     /* --primary-color: #C9D8F9;
     --appBar-color: #b6cbf9;

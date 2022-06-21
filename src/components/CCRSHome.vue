@@ -10,7 +10,8 @@
       <br>
     </main>
     <aside>
-      <img src="./../assets/317582_1100-732x549.jpg" alt="" style="max-height: 90vh; max-width: 55vw;" />
+      <img src="./../assets/MSHS-Cancer-RadiationOncology-2col-685x375-3.jpg" alt="" style="max-height: 90vh; max-width: 55vw;" />
+      <!-- <img src="./../assets/317582_1100-732x549.jpg" alt="" style="max-height: 90vh; max-width: 55vw;" /> -->
     </aside>
   </div>
 </template>

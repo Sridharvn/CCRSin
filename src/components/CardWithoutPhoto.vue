@@ -1,12 +1,12 @@
 <template>
-    <v-card class="mx-auto" max-width="344">
-        <v-card-text>
+    <v-card class="mx-auto" max-width="344" elevation="24" outlined shaped id="cards">
+        <v-card-text id="cards">
             <!-- <div>Word of the Day</div> -->
-            <p class="text-h4 text--primary">
+            <p class="text-h4" >
                 {{ CardData.Name }}
             </p>
             <p>{{ CardData.Designation }}</p>
-            <div class="text--primary">
+            <div class="">
                 {{ CardData.Department }}
             </div>
         </v-card-text>
@@ -54,5 +54,9 @@ export default {
     opacity: 1 !important;
     position: absolute;
     width: 100%;
+}
+#cards{
+    color:var(--text-color);
+    background-color:var(--primary-color);
 }
 </style>

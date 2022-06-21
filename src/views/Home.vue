@@ -2,11 +2,13 @@
   <div class="home">
     <CCRSHome></CCRSHome>
     <v-spacer></v-spacer>
-    <!-- <v-row>
-      <v-col>
-        <DetailsText :DetailstextData="DetailstextData2"></DetailsText>
+    <v-row>
+      <v-col v-for="item in ccrsFacultyData" :key="item" id="Cards">
+        <CardWithoutPhoto :CardData="item"></CardWithoutPhoto>
+
       </v-col>
-    </v-row> -->
+    </v-row>
+    <v-divider light></v-divider>
     <h1>Upcoming Oncology Conference 2022</h1>
     <home-main></home-main>
     <!-- <br /><br /> -->
@@ -63,6 +65,7 @@ import DetailsText from "../components/DetailsText.vue";
 import Table from "../components/Table.vue";
 import HotelsDetails from "../components/HotelsDetails.vue";
 import CCRSHome from '../components/CCRSHome.vue';
+import CardWithoutPhoto from "../components/CardWithoutPhoto.vue";
 
 export default {
   name: "Home",
@@ -74,6 +77,7 @@ export default {
     Table,
     HotelsDetails,
     CCRSHome,
+    CardWithoutPhoto
   },
   mounted() {
     //
@@ -235,6 +239,32 @@ export default {
           value: "Distance",
         },
       ],
+      ccrsFacultyData: [
+        {
+          Name: "Dr. C.S Madhu",
+          Designation: "",
+          Department: "",
+          Centre: "Chairman",
+        },
+        {
+          Name: "Dr. Unni S. Pillai",
+          Designation: "",
+          Department: "",
+          Centre: "Vice Chairman",
+        },
+        {
+          Name: "Dr. Manoj S.",
+          Designation: "",
+          Department: "",
+          Centre: "Secretary",
+        },
+        {
+          Name: "Dr. Anilkumar K.",
+          Designation: "",
+          Department: "",
+          Centre: "Treasurer",
+        },
+      ]
     };
   },
   methods: {
