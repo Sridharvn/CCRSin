@@ -4,44 +4,50 @@
       <!-- <v-app-bar app elevation="10" elevate-on-scroll shrink-on-scroll id="appbar"> -->
       <div class="d-flex align-center">
         <v-app-bar-nav-icon>
-          <v-img class="shrink mr-2" contain src="./assets/ccrs-logo.png" transition="scale-transition" width="60" />
+          <v-img
+            class="shrink mr-2"
+            contain
+            src="./assets/ccrs-logo.png"
+            transition="scale-transition"
+            width="60"
+          />
         </v-app-bar-nav-icon>
         <v-toolbar-title id="appbar">
-          <strong>
-          &nbsp;Cancer Control & Research Society</strong>
+          <strong> &nbsp;Cancer Control & Research Society</strong>
         </v-toolbar-title>
       </div>
       <template v-slot:extension>
-        <v-tabs v-model="tab" background-color="var(--Tab-color)" center-active dark fixed-tabs
-          color="var(--TabSlider-color)">
+        <v-tabs
+          v-model="tab"
+          background-color="var(--Tab-color)"
+          center-active
+          dark
+          fixed-tabs
+          color="var(--TabSlider-color)"
+        >
           <v-tabs-slider color="var(--TabSlider-color)"></v-tabs-slider>
 
-          <v-tab @click="redirectToHome()" id="Tabs">
-            Home
-          </v-tab>
-          <v-tab @click="redirectToInternationalFaculty()" id="Tabs">
+          <v-tab @click="redirectToHome()" id="Tabs"> Home </v-tab>
+          <!-- <v-tab @click="redirectToInternationalFaculty()" id="Tabs">
             International Faculty
           </v-tab>
-          <v-tab @click="redirectToNationalFaculty()" id="Tabs">
-            National Faculty
-          </v-tab>
+          <v-tab @click="redirectToNationalFaculty()" id="Tabs"> National Faculty </v-tab>
           <v-tab @click="redirectToOrganizingCommitteePage()" id="Tabs">
             Organizing Committee
-          </v-tab>
+          </v-tab>-->
         </v-tabs>
       </template>
       <v-spacer></v-spacer>
       <!-- <drop-down :DownloadsLinks="DownloadsLinks" :name="Download" id="DropDown"></drop-down> -->
-
     </v-app-bar>
     <v-main>
       <!-- <div id="TopButtons">
         <button @click="redirectToHome()">&raquo;Home</button>
         <button @click="redirectToCommitteePage()">&raquo;Committee</button>
       </div> -->
-      <router-view style="margin:0%;padding:0%;" />
+      <router-view style="margin: 0%; padding: 0%" />
     </v-main>
-    <website-footer :DownloadLinks="DownloadsLinks"></website-footer>
+    <!-- <website-footer :DownloadLinks="DownloadsLinks"></website-footer> -->
   </v-app>
 </template>
 
@@ -49,11 +55,12 @@
 import axios from "axios";
 // import gsap from "gsap";
 // import DropDown from "./components/DropDown.vue";
-import WebsiteFooter from "./components/WebsiteFooter.vue";
+// import WebsiteFooter from "./components/WebsiteFooter.vue";
 export default {
-  components: { 
-    // DropDown, 
-  WebsiteFooter },
+  components: {
+    // DropDown,
+    // WebsiteFooter,
+  },
   name: "App",
 
   data: () => ({
@@ -126,16 +133,16 @@ export default {
       this.DownloadLinks = data;
     },
     redirectToHome() {
-      this.$router.push({ path: '/' });
+      this.$router.push({ path: "/" });
     },
     redirectToOrganizingCommitteePage() {
-      this.$router.push({ path: '/Committee' });
+      this.$router.push({ path: "/Committee" });
     },
     redirectToInternationalFaculty() {
-      this.$router.push({ path: '/InternationalFaculty' });
+      this.$router.push({ path: "/InternationalFaculty" });
     },
     redirectToNationalFaculty() {
-      this.$router.push({ path: '/NationalFaculty' });
+      this.$router.push({ path: "/NationalFaculty" });
     },
   },
 };
@@ -172,7 +179,6 @@ p {
   background: var(--primary-color);
   padding: 10px;
 }
-
 
 @media screen and (max-width: 594px) {
   #appbar {

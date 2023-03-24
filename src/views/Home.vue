@@ -5,12 +5,13 @@
     <v-row>
       <v-col v-for="item in ccrsFacultyData" :key="item" id="Cards">
         <CardWithoutPhoto :CardData="item"></CardWithoutPhoto>
-
       </v-col>
     </v-row>
+    <br><br>
     <v-divider light></v-divider>
-    <h1>Upcoming Oncology Conference 2022</h1>
-    <home-main></home-main>
+    <SitesList></SitesList>
+    <!-- <h1>Upcoming Oncology Conference 2022</h1> -->
+    <!-- <home-main></home-main> -->
     <!-- <br /><br /> -->
     <!-- todo Card Code -->
     <!-- <v-spacer></v-spacer>
@@ -22,17 +23,17 @@
         <v-spacer></v-spacer>
       </div>
     </v-row> -->
-    <v-row>
+    <!-- <v-row>
       <v-col>
         <DetailsText :DetailstextData="DetailstextData"></DetailsText>
       </v-col>
-    </v-row>
+    </v-row> -->
     <!-- <v-row>
       <v-col>
         <InstructionsForPreperation></InstructionsForPreperation>
       </v-col>
     </v-row> -->
-    <v-row>
+    <!-- <v-row>
       <v-col>
         <HotelsDetails></HotelsDetails>
       </v-col>
@@ -41,43 +42,49 @@
     <v-row>
       <v-col>
         <h3>Places of interest in Kerala</h3>
-        <!-- <v-spacer></v-spacer> -->
-        <Table :TableData="PlacesofInterestData" :Headers="PlacesofInterestHeaders"></Table>
+        <v-spacer></v-spacer>
+        <Table
+          :TableData="PlacesofInterestData"
+          :Headers="PlacesofInterestHeaders"
+        ></Table>
       </v-col>
     </v-row>
     <v-row>
-      <v-col><br />
-        <h3 style="color:var(--text-color) !important">Places in and around Cochin</h3>
-        <!-- <v-spacer></v-spacer> -->
+      <v-col
+        ><br />
+        <h3 style="color: var(--text-color) !important">Places in and around Cochin</h3>
+        <v-spacer></v-spacer>
         <Table :TableData="PlacesinKochiData" :Headers="PlacesinKochiHeaders"></Table>
       </v-col>
     </v-row>
     <br />
-    <br />
+    <br /> -->
   </div>
 </template>
 
 <script>
-import HomeMain from "../components/HomeMain.vue";
+// import HomeMain from "../components/HomeMain.vue";
 // import DetailsCards from "../components/DetailsCards.vue";
-import DetailsText from "../components/DetailsText.vue";
+// import DetailsText from "../components/DetailsText.vue";
 // import InstructionsForPreperation from "../components/InstructionsForPreperation.vue";
-import Table from "../components/Table.vue";
-import HotelsDetails from "../components/HotelsDetails.vue";
-import CCRSHome from '../components/CCRSHome.vue';
+// import Table from "../components/Table.vue";
+// import HotelsDetails from "../components/HotelsDetails.vue";
+import CCRSHome from "../components/CCRSHome.vue";
 import CardWithoutPhoto from "../components/CardWithoutPhoto.vue";
+import SitesList from "../components/SitesList.vue";
 
 export default {
   name: "Home",
   components: {
-    HomeMain,
+    // HomeMain,
     // DetailsCards,
-    DetailsText,
+    // DetailsText,
     // InstructionsForPreperation,
-    Table,
-    HotelsDetails,
+    // Table,
+    // HotelsDetails,
     CCRSHome,
-    CardWithoutPhoto
+    CardWithoutPhoto,
+    SitesList,
   },
   mounted() {
     //
@@ -136,10 +143,8 @@ export default {
         wish: "",
         Details:
           "Cancer Control and Research Society is a charitable organisation registered as per Act XII of 1955. The society is involved in cancer control activities by providing cancer care, palliative home care, assistance to suffering cancer patients, cancer awareness camps, continuing medical education programmes and international and national multidisciplinary oncology conferences.",
-        Details2:
-          "",
-        Details3:
-          "",
+        Details2: "",
+        Details3: "",
         Thanks: "",
         Footer1: {
           name: "Prof. Dr. C.S. Madhu MD, DNB",
@@ -173,8 +178,7 @@ export default {
         },
         {
           Destination: "Alleppey",
-          Description:
-            "Another backwater destination famous for Houseboat criuse",
+          Description: "Another backwater destination famous for Houseboat criuse",
           Distance: "60 Kms",
         },
         {
@@ -264,7 +268,7 @@ export default {
           Department: "",
           Centre: "Treasurer",
         },
-      ]
+      ],
     };
   },
   methods: {
@@ -283,6 +287,6 @@ h3 {
   /* Crown Plaza color */
   /* color: var(--secondary-color); */
   color: var(--text-color);
-  text-align: center
+  text-align: center;
 }
 </style>
