@@ -1,10 +1,19 @@
 <template>
   <div id="home">
     <main>
-      <h1>Cancer Control & Research Society (CCRS)</h1>
+      <h1>
+        Cancer Control & Research Society (CCRS)<br />
+        <h6 style="font-size: small !important">
+          (Registered Under Charitable Society Act XII of 1955)
+        </h6>
+      </h1>
 
       <!-- <h3>Cancer Control & Research Society is a charitable organisation registered as per Act XII of 1955. The society is involved in cancer control activities by providing cancer care, palliative home care, assistance to suffering cancer patients, cancer awareness camps, continuing medical education programmes and international and national multidisciplinary oncology conferences.</h3> -->
       <h3>
+        <h5 style="color: rgb(0, 0, 100)">
+          "Thushar", House No.431-B, Kumaranalloor P.O., Kottayam - 686 016<br /><br />
+        </h5>
+
         Cancer Control & Research Society is an organisation registered under
         charitable societies Act XII of 1955. It is involved in provision of
         palliative care and home care for suffering cancer patients. This

@@ -8,7 +8,7 @@
       </v-col>
     </v-row>
     <br /><br />
-    <v-divider light></v-divider>
+    <!-- <v-divider light></v-divider> -->
     <SitesList></SitesList>
     <!-- <h1>Upcoming Oncology Conference 2022</h1> -->
     <!-- <home-main></home-main> -->
@@ -249,28 +249,34 @@ export default {
       ],
       ccrsFacultyData: [
         {
-          Name: "Dr. C.S Madhu",
-          Designation: "",
+          Name: "Dr. C.S Madhu MD,DNB",
+          Designation: "+91-9387103803",
           Department: "",
           Centre: "Chairman",
         },
         {
-          Name: "Dr. Unni S. Pillai",
-          Designation: "",
+          Name: "Dr. Unni S. Pillai MD, DM",
+          Designation: "+91-7598563161",
           Department: "",
           Centre: "Vice Chairman",
         },
         {
-          Name: "Dr. Manoj S.",
-          Designation: "",
+          Name: "Dr. Manoj S. MD.",
+          Designation: "+91-9495685121,+91-8078298449",
           Department: "",
           Centre: "Secretary",
         },
         {
-          Name: "Dr. Anilkumar K.",
-          Designation: "",
+          Name: "Dr. Anilkumar K. M.Sc, DRP",
+          Designation: "+91-9847093410",
           Department: "",
           Centre: "Treasurer",
+        },
+        {
+          Name: "Mr. Abey Thomas ",
+          Designation: "+91-9562084100,+91-9447073203",
+          Department: "",
+          Centre: "Jt. Secretary",
         },
       ],
     };
