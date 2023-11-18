@@ -7,7 +7,7 @@
         <CardWithoutPhoto :CardData="item"></CardWithoutPhoto>
       </v-col>
     </v-row>
-    <br><br>
+    <br /><br />
     <v-divider light></v-divider>
     <SitesList></SitesList>
     <!-- <h1>Upcoming Oncology Conference 2022</h1> -->
@@ -59,6 +59,7 @@
     </v-row>
     <br />
     <br /> -->
+    <Footer />
   </div>
 </template>
 
@@ -72,6 +73,7 @@
 import CCRSHome from "../components/CCRSHome.vue";
 import CardWithoutPhoto from "../components/CardWithoutPhoto.vue";
 import SitesList from "../components/SitesList.vue";
+import Footer from "../components/Footer.vue";
 
 export default {
   name: "Home",
@@ -85,6 +87,7 @@ export default {
     CCRSHome,
     CardWithoutPhoto,
     SitesList,
+    Footer,
   },
   mounted() {
     //
@@ -178,7 +181,8 @@ export default {
         },
         {
           Destination: "Alleppey",
-          Description: "Another backwater destination famous for Houseboat criuse",
+          Description:
+            "Another backwater destination famous for Houseboat criuse",
           Distance: "60 Kms",
         },
         {
