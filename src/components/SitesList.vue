@@ -33,7 +33,11 @@
         :key="site"
         class="siteslist__list"
       >
-        <a :href="site.address" class="siteslist__link" v-if="index != 0"
+        <a
+          :href="site.address"
+          class="siteslist__link"
+          v-if="index != 0"
+          target="_blank"
           ><v-img
             :src="require(`@/assets/${site.image}`)"
             class="siteslist__image"
