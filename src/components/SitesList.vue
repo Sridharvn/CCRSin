@@ -4,7 +4,7 @@
     <h1>Our Upcoming Conference</h1>
     <div class="upComingEvent">
       <div class="siteslist__list">
-        <a :href="sitesList[0].address" class="siteslist__link"
+        <a :href="sitesList[0].address" class="siteslist__link" target="_blank"
           ><v-img
             :src="require(`@/assets/${sitesList[0].image}`)"
             class="siteslist__image"
@@ -48,9 +48,11 @@
 .siteslist {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
+  //justify-content: space-evenly;
   align-items: flex-start;
   margin-top: 30px;
+  gap: 20px;
 
   &__image {
     height: 210px;
@@ -164,6 +166,12 @@ export default {
           address: "http://www.ccrsindia.in/oncology2009",
           title: "Oncology conference with international participation - 2009",
           image: "sites/oncology2009.png",
+        },
+        {
+          address: "http://www.ccrsindia.in/oncology2003",
+          title:
+            "Association of Radiation Oncologists in India - 25th National Conference at Kochi - 2003",
+          image: "sites/oncology2003.png",
         },
       ],
     };
