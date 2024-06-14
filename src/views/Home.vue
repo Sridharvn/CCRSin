@@ -2,6 +2,8 @@
   <div class="home">
     <CCRSHome></CCRSHome>
     <v-spacer></v-spacer>
+    <kumarakom-event></kumarakom-event>
+    <v-spacer></v-spacer>
     <v-row>
       <v-col v-for="item in ccrsFacultyData" :key="item" id="Cards">
         <CardWithoutPhoto :CardData="item"></CardWithoutPhoto>
@@ -74,6 +76,7 @@ import CCRSHome from "../components/CCRSHome.vue";
 import CardWithoutPhoto from "../components/CardWithoutPhoto.vue";
 import SitesList from "../components/SitesList.vue";
 import Footer from "../components/Footer.vue";
+import KumarakomEvent from "../components/kumarakomEvent.vue";
 
 export default {
   name: "Home",
@@ -88,6 +91,7 @@ export default {
     CardWithoutPhoto,
     SitesList,
     Footer,
+    KumarakomEvent,
   },
   mounted() {
     //
