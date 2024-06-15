@@ -3,7 +3,7 @@
     <!-- <hr /> -->
     <h1>Our Upcoming Conference</h1>
     <div class="upComingEvent">
-      <div class="siteslist__list">
+      <div class="siteslist__list" v-if="false">
         <a :href="sitesList[0].address" class="siteslist__link" target="_blank"
           ><v-img
             :src="require(`@/assets/${sitesList[0].image}`)"
@@ -28,16 +28,10 @@
     <br /><br />
     <h1>Official Websites of CCRS events from the past</h1>
     <div class="siteslist">
-      <div
-        v-for="(site, index) in sitesList"
-        :key="site"
-        class="siteslist__list"
-      >
-        <a
-          :href="site.address"
-          class="siteslist__link"
-          v-if="index != 0"
-          target="_blank"
+      <!-- v-for="(site, index) in sitesList" -->
+      <div v-for="site in sitesList" :key="site" class="siteslist__list">
+        <!-- v-if="index != 0" -->
+        <a :href="site.address" class="siteslist__link" target="_blank"
           ><v-img
             :src="require(`@/assets/${site.image}`)"
             class="siteslist__image"

@@ -1,8 +1,8 @@
 <template>
   <div class="home">
-    <CCRSHome></CCRSHome>
-    <v-spacer></v-spacer>
     <kumarakom-event></kumarakom-event>
+    <v-spacer></v-spacer>
+    <CCRSHome></CCRSHome>
     <v-spacer></v-spacer>
     <v-row>
       <v-col v-for="item in ccrsFacultyData" :key="item" id="Cards">
