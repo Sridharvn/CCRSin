@@ -16,9 +16,9 @@
         <h2>Payment Details</h2>
         <div class="paymentContent">
           <div class="paymentText">
-            REGISTRATION FEE: Rs 3000/<br />
-            PG'S: Rs 2000/<br />
-            LAST DATE OF REGISTRATION: 01/07/2024<br />
+            REGISTRATION FEE: <strong>Rs 3000/</strong><br />
+            PG'S: <strong>Rs 2000</strong>/<br />
+            LAST DATE OF REGISTRATION: <strong>01/07/2024</strong><br />
             NO SPOT REGISTRATION<br />
             Send information to Email ID:
             <span
@@ -39,19 +39,20 @@
         <div class="accountContent">
           <div class="accountDetails">
             <br />
-            ACCOUNT NAME: CANCER CONTROL AND RESEARCH SOCIETY KUMARANALLOOR
+            ACCOUNT NAME:
+            <strong>CANCER CONTROL AND RESEARCH SOCIETY KUMARANALLOOR</strong>
             <br />
-            A/C NO: 0930073000000064 <br />
-            BANK: THE SOUTH INDIAN BANK LIMITED BRANCH: KOTTAYAM MEDICAL
-            COLLEGE, KOTTAYAM <br />
-            IFSC: SIBL0000930 <br />
-            PAN: AADAC6129Q
+            A/C NO: <strong>0930073000000064</strong> <br />
+            BANK: <strong>THE SOUTH INDIAN BANK LIMITED</strong><br />
+            BRANCH:<strong> KOTTAYAM MEDICAL COLLEGE, KOTTAYAM </strong><br />
+            IFSC: <strong>SIBL0000930</strong> <br />
+            PAN: <strong>AADAC6129Q</strong>
           </div>
           <div class="qr">
             <a href="upi://pay?pa=qr.ccrs1@sib" target="_blank">
               <img src="./../assets/kumarakomEvent/qrCode.png" alt=""
             /></a>
-            <div>UPT ID: qr.ccrs1@sib</div>
+            <div>UPT ID: <strong>qr.ccrs1@sib</strong></div>
           </div>
         </div>
       </div>
@@ -65,7 +66,7 @@
         </div>
         <div class="phoneItemsWrapper">
           <div class="phoneItems">
-            <div class="phoneItem">
+            <div class="phoneItem firstPhoneItem">
               <div class="phoneItemTitle">Contact</div>
               <a href="tel:+917054777762" target="_blank">+917054777762</a>
             </div>
@@ -217,6 +218,10 @@ a {
     margin-bottom: 10px;
   }
 }
+.firstPhoneItem {
+  border-right: 1.5px solid var(--text-color);
+  padding-right: 20px;
+}
 .phoneItemsWrapper {
   display: flex;
   justify-content: center;
@@ -225,12 +230,13 @@ a {
     display: flex;
     justify-content: space-evenly;
     align-items: space-between;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     border: 1px solid var(--text-color);
     border-radius: 1rem;
     padding: 1rem;
     margin: 2rem;
     width: 100%;
+
     .phoneItem {
       display: flex;
       flex-direction: column;
@@ -292,8 +298,14 @@ a {
       text-align: center;
     }
   }
+  .firstPhoneItem {
+    border: none;
+    border-bottom: 1.5px solid var(--text-color);
+    padding-bottom: 10px;
+  }
   .phoneItemsWrapper {
     .phoneItems {
+      flex-direction: column;
       .phoneItem {
         .phoneItemTitle {
           height: fit-content;
