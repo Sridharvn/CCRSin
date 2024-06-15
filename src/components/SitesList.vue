@@ -15,10 +15,7 @@
       <div class="upComingEventDetails">
         <h2>HIT (How I Treat) Oncology Conference 2024</h2>
         <!-- <h3 class="">HIT (How I Treat) Oncology Conference 2024</h3> -->
-        <h3>
-          HOTEL LAKESONG, KUMARAKOM, &nbsp; 17TH & 18TH AUGUST 2024HOTEL
-          LAKESONG, KUMARAKOM, &nbsp; 17TH & 18TH AUGUST 2024
-        </h3>
+        <h3>HOTEL LAKESONG, KUMARAKOM, &nbsp; 17TH & 18TH AUGUST 2024</h3>
         <h3>
           <a href="mailto:hitoncology2024@gmail.com"
             >Email: hitoncology2024@gmail.com</a
