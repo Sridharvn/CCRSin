@@ -12,53 +12,70 @@
         E-MAIL: FOOD PREFERENCE: Veg Non-Veg
       </div>
       <div class="payment">
-        Payment Details REGISTRATION FEE: Rs 3000/- PG'S: Rs 2000/- LAST DATE OF
-        REGISTRATION: 01/07/2024 NO SPOT REGISTRATION Send information to Email
-        ID:
-        <span
-          ><a href="mailto:hitoncology2024@gmail.com"
-            >hitoncology2024@gmail.com</a
-          ></span
-        >
+        <h2>Payment Details</h2>
+        <div class="paymentContent">
+          <div class="paymentText">
+            REGISTRATION FEE: Rs 3000/<br />
+            PG'S: Rs 2000/<br />
+            LAST DATE OF REGISTRATION: 01/07/2024<br />
+            NO SPOT REGISTRATION<br />
+            Send information to Email ID:
+            <span
+              ><a href="mailto:hitoncology2024@gmail.com"
+                >hitoncology2024@gmail.com</a
+              ></span
+            >
+          </div>
+
+          <img
+            src="https://imgs.search.brave.com/VMGLvpOhAdBHOUnUti2B5aDEUkJvuwDjDDYUVgrdEkk/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9sYWtl/c29uZy1ob3RlbC1r/dW1hcmFrb20uYm9v/a2VkLm5ldC9kYXRh/L1Bob3Rvcy80NTB4/NDUwLzQxNzIvNDE3/MjIwLzQxNzIyMDE1/Mi9MYWtlc29uZy1S/ZXNvcnQtS3VtYXJh/a29tLUV4dGVyaW9y/LkpQRUc"
+            alt=""
+          />
+        </div>
       </div>
       <div class="paymentDetails">
-        <div class="accountDetails">
-          <h2>Account Details</h2>
-          <br />
-          ACCOUNT NAME: CANCER CONTROL AND RESEARCH SOCIETY KUMARANALLOOR <br />
-          A/C NO: 0930073000000064 <br />
-          BANK: THE SOUTH INDIAN BANK LIMITED BRANCH: KOTTAYAM MEDICAL COLLEGE,
-          KOTTAYAM <br />
-          IFSC: SIBL0000930 <br />
-          PAN: AADAC6129Q
-        </div>
-        <div class="qr">
-          <a href="upi://pay?pa=qr.ccrs1@sib">
-            <img src="./../assets/kumarakomEvent/qrCode.png" alt=""
-          /></a>
-          <div>UPT ID: qr.ccrs1@sib</div>
+        <h2>Account Details</h2>
+        <div class="accountContent">
+          <div class="accountDetails">
+            <br />
+            ACCOUNT NAME: CANCER CONTROL AND RESEARCH SOCIETY KUMARANALLOOR
+            <br />
+            A/C NO: 0930073000000064 <br />
+            BANK: THE SOUTH INDIAN BANK LIMITED BRANCH: KOTTAYAM MEDICAL
+            COLLEGE, KOTTAYAM <br />
+            IFSC: SIBL0000930 <br />
+            PAN: AADAC6129Q
+          </div>
+          <div class="qr">
+            <a href="upi://pay?pa=qr.ccrs1@sib" target="_blank">
+              <img src="./../assets/kumarakomEvent/qrCode.png" alt=""
+            /></a>
+            <div>UPT ID: qr.ccrs1@sib</div>
+          </div>
         </div>
       </div>
       <div>
         <div class="place">
           <h2>Location Details</h2>
-          <a href="https://maps.app.goo.gl/wdyfRM8TYXu47fvY7"
+          <a href="https://maps.app.goo.gl/wdyfRM8TYXu47fvY7" target="_blank"
             >HOTEL LAKESONG KUMARAKOM</a
           >
           17TH & 18TH AUGUST 2024
         </div>
-        <div class="phoneItems">
-          <div class="phoneItem">
-            <div class="phoneItemTitle">Contact</div>
-            <a href="tel:+917054777762">+917054777762</a>
-          </div>
-          <div class="phoneItem">
-            <div class="phoneItemTitle">Prof. Dr. C. S. Madhu MD, DNB</div>
-            <a href="tel:+919387103803">+919387103803</a>
-          </div>
-          <div class="phoneItem">
-            <div class="phoneItemTitle">Dr. Manoj S. MD, DM</div>
-            <a href="tel:+919495685121">+919495685121</a>
+        <div class="phoneItemsWrapper">
+          <div class="phoneItems">
+            <div class="phoneItem">
+              <div class="phoneItemTitle">Contact</div>
+              <a href="tel:+917054777762" target="_blank">+917054777762</a>
+            </div>
+            <div class="phoneItem">
+              <div class="phoneItemTitle">Prof. Dr. C. S. Madhu MD, DNB</div>
+              <a href="tel:+919387103803" target="_blank">+919387103803</a>
+            </div>
+            <div class="phoneItem">
+              <div class="phoneItemTitle">Dr. Manoj S. MD, DM</div>
+              <a href="tel:+919495685121" target="_blank">+919495685121</a>
+            </div>
           </div>
         </div>
       </div>
@@ -66,7 +83,7 @@
       <div class="link">
         <div class="pdfDownload">
           <a
-            href="https://www.ccrsindia.in/hit-24-registration.pdf"
+            href="http://www.ccrsindia.in/hit-24-registration.pdf"
             target="_blank"
             >Download the Registration Form</a
           >
@@ -121,6 +138,9 @@
 </style> -->
 
 <style lang="scss" scoped>
+// * {
+//   outline: 1px solid red;
+// }
 a {
   color: var(--text-color) !important;
   font-weight: bolder;
@@ -134,8 +154,11 @@ a {
 }
 
 .innerWrapper {
+  background: #fce4df;
+  border-radius: 1rem;
+  padding: 20px;
   margin: 10px;
-  width: 75vh;
+  width: 60vw;
   text-align: center;
 }
 
@@ -191,46 +214,100 @@ a {
     margin-bottom: 10px;
   }
 }
-.phoneItems {
+.phoneItemsWrapper {
   display: flex;
-  justify-content: space-evenly;
-  align-items: space-between;
-  flex-wrap: wrap;
-  border: 1px solid var(--text-color);
-  border-radius: 1rem;
-  padding: 1rem;
-  margin: 2rem;
+  justify-content: center;
   width: 100%;
-  .phoneItem {
+  .phoneItems {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 10px;
+    justify-content: space-evenly;
+    align-items: space-between;
+    flex-wrap: wrap;
+    border: 1px solid var(--text-color);
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 2rem;
+    width: 100%;
+    .phoneItem {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 10px;
 
-    .phoneItemTitle {
-      height: 30px;
-      font-size: 1.2rem;
-      margin-bottom: 5px;
+      .phoneItemTitle {
+        height: 30px;
+        font-size: 1.2rem;
+        margin-bottom: 5px;
+      }
     }
   }
-
   a {
     font-size: 1.1rem;
     text-decoration: none;
   }
 }
 .payment {
+  .paymentContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    img {
+      width: 20vh;
+    }
+  }
+  .paymentText {
+    text-align: left;
+  }
 }
 .paymentDetails {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  margin-top: 20px;
+  .accountContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // flex-wrap: wrap;
+  }
 }
 .pdfDownload {
   display: flex;
   justify-content: center;
   width: 100%;
   margin-bottom: 20px;
+}
+@media screen and (max-width: 950px) {
+  .paymentContent {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    img {
+      width: 20vh;
+      display: none;
+    }
+    .paymentText {
+      text-align: center;
+    }
+  }
+  .phoneItemsWrapper {
+    .phoneItems {
+      .phoneItem {
+        .phoneItemTitle {
+          height: fit-content;
+          font-size: 1.2rem;
+          margin-bottom: 5px;
+        }
+      }
+    }
+    a {
+    }
+  }
+  .paymentDetails .accountContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 </style>
 <script>
