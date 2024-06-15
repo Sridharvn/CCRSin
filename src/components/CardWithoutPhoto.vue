@@ -57,6 +57,9 @@ export default {
 };
 </script>
 <style>
+.row {
+  margin: 0px !important;
+}
 .v-card--reveal {
   bottom: 0;
   opacity: 1 !important;

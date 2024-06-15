@@ -110,7 +110,7 @@
       width: 325px;
 
       &__link {
-        margin: 30px;
+        // margin: 30px;
         width: 300px;
       }
 

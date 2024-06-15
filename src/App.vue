@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar app elevation="5" id="appbar">
+    <v-app-bar app elevation="5" id="appbar" style="max-width: 100vw">
       <!-- <v-app-bar app elevation="10" elevate-on-scroll shrink-on-scroll id="appbar"> -->
       <div class="d-flex align-center">
         <v-app-bar-nav-icon>
@@ -16,7 +16,7 @@
           <strong> &nbsp;Cancer Control & Research Society</strong>
         </v-toolbar-title>
       </div>
-      <template v-slot:extension>
+      <!-- <template v-slot:extension>
         <v-tabs
           v-model="tab"
           background-color="var(--Tab-color)"
@@ -28,15 +28,15 @@
           <v-tabs-slider color="var(--TabSlider-color)"></v-tabs-slider>
 
           <v-tab @click="redirectToHome()" id="Tabs"> Home </v-tab>
-          <!-- <v-tab @click="redirectToInternationalFaculty()" id="Tabs">
-            International Faculty
-          </v-tab>
-          <v-tab @click="redirectToNationalFaculty()" id="Tabs"> National Faculty </v-tab>
-          <v-tab @click="redirectToOrganizingCommitteePage()" id="Tabs">
-            Organizing Committee
-          </v-tab>-->
+          //<v-tab @click="redirectToInternationalFaculty()" id="Tabs">
+          //  International Faculty
+          //</v-tab>
+          //<v-tab @click="redirectToNationalFaculty()" id="Tabs"> National Faculty </v-tab>
+          //<v-tab @click="redirectToOrganizingCommitteePage()" id="Tabs">
+         //   Organizing Committee
+          //</v-tab>
         </v-tabs>
-      </template>
+      </template> -->
       <v-spacer></v-spacer>
       <!-- <drop-down :DownloadsLinks="DownloadsLinks" :name="Download" id="DropDown"></drop-down> -->
     </v-app-bar>
@@ -160,6 +160,7 @@ export default {
   font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
   padding: 0;
   margin: 0;
+  /* outline: 1px solid red; */
 }
 
 p {
