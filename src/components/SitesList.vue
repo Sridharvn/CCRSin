@@ -13,7 +13,20 @@
         </a>
       </div>
       <div class="upComingEventDetails">
-        <h2>Oncology 2024</h2>
+        <h2>HIT (How I Treat) Oncology Conference 2024</h2>
+        <!-- <h3 class="">HIT (How I Treat) Oncology Conference 2024</h3> -->
+        <h3>
+          HOTEL LAKESONG, KUMARAKOM, &nbsp; 17TH & 18TH AUGUST 2024HOTEL
+          LAKESONG, KUMARAKOM, &nbsp; 17TH & 18TH AUGUST 2024
+        </h3>
+        <h3>
+          <a href="mailto:hitoncology2024@gmail.com"
+            >Email: hitoncology2024@gmail.com</a
+          >
+          <br />
+          <a href="tel:+917054777762" target="_blank">Contact: +917054777762</a>
+        </h3>
+        <!-- <h2>Oncology 2024</h2>
         <h3 class="">{{ sitesList[0].title }}</h3>
         <h3>March 8, 9 and 10 at Le Meridien, Kochi</h3>
         <h3>
@@ -21,8 +34,8 @@
             Email: oncology2024@gmail.com</a
           >
           <br />
-          <a href="http://www.oncology2024.in/">Web: www.oncology2024.in</a>
-        </h3>
+          <a href="http://www.oncology2024.in/">Web: www.oncology2024.in</a> -->
+        <!-- </h3> -->
       </div>
     </div>
     <br /><br />
