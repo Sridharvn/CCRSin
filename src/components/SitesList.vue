@@ -86,6 +86,7 @@
   }
 
   &__list {
+    max-width: 100vw;
   }
 
   &__title {
@@ -114,14 +115,20 @@
 }
 @media only screen and (max-width: 768px) {
   /* Styles here */
+  .siteslist__link {
+    width: 90vw;
+    margin: 0;
+  }
   .siteslist {
     &__image {
       height: 170px;
       width: 325px;
+      margin: 0;
 
       &__link {
-        // margin: 30px;
-        width: 300px;
+        // margin: 0px;
+        // width: 250px;
+        // width: 90vw;
       }
 
       &__list {

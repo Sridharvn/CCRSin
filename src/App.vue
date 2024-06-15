@@ -183,7 +183,7 @@ p {
 
 @media screen and (max-width: 594px) {
   #appbar {
-    font-size: large;
+    font-size: medium;
   }
 
   #DropDOWN {
