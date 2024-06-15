@@ -172,6 +172,7 @@ a {
   h2 {
     font-size: 2.5rem;
     margin-bottom: 10px;
+    color: var(--text-color-dark);
   }
 
   h4 {
