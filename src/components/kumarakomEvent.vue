@@ -4,7 +4,8 @@
       <div class="header">
         <!-- <h2>Registration Form</h2>
           <h4>Cancer Control and Research Society</h4> -->
-        <h2>H I T (How I Treat) Oncology 2024</h2>
+        <h2>HIT (How I Treat) Oncology Conference 2024</h2>
+        <h6>(HOTEL LAKESONG, KUMARAKOM, &nbsp; 17TH & 18TH AUGUST 2024)</h6>
       </div>
 
       <div v-if="false">
@@ -58,7 +59,7 @@
         <div class="place">
           <h2>Location Details</h2>
           <a href="https://maps.app.goo.gl/wdyfRM8TYXu47fvY7" target="_blank"
-            >HOTEL LAKESONG KUMARAKOM</a
+            >HOTEL LAKESONG, KUMARAKOM</a
           >
           17TH & 18TH AUGUST 2024
         </div>
@@ -158,7 +159,9 @@ a {
   border-radius: 1rem;
   padding: 20px;
   margin: 10px;
-  width: 60vw;
+  margin-block: 30px;
+  width: 90vw;
+  padding-inline: 30px;
   text-align: center;
 }
 
