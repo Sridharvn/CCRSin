@@ -1,3 +1,5 @@
+<!-- https://drive.google.com/drive/folders/10xTO2aue9EQcS06hOyBCjifZXUkzKDen?usp=share_link -->
+
 <template>
   <div class="wrapper">
     <div class="innerWrapper">
@@ -7,7 +9,7 @@
         <h2>HIT (How I Treat) Oncology Conference 2024</h2>
         <h6>(HOTEL LAKESONG, KUMARAKOM, &nbsp; 17TH & 18TH AUGUST 2024)</h6>
       </div>
-
+      <Gallery></Gallery>
       <div v-if="false">
         NAME: DESIGNATION: AGE: SEX: INSTITUTION: WHATSAPP NUMBER: PHONE:
         E-MAIL: FOOD PREFERENCE: Veg Non-Veg
@@ -327,5 +329,11 @@ a {
 }
 </style>
 <script>
-export default {};
+import Gallery from "./Gallery.vue";
+
+export default {
+  components: {
+    Gallery,
+  },
+};
 </script>
