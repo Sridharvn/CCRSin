@@ -32,7 +32,8 @@
   </div>
 </template>
 <script>
-import imageDirectory from "./data/eventGallery";
+// eslint-disable-next-line no-unused-vars
+import imageDirectory from "./data/eventGallery.ts";
 
 export default {
   methods: {
