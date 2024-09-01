@@ -1,6 +1,7 @@
 <template>
   <div>
-    <!-- https://drive.google.com/drive/folders/1Sh1KsRoX1ZsQl56T5RURZ_DkGWSS3NWU?usp=drive_link -->
+    <!-- https://drive.google.com/drive/folders/10xTO2aue9EQcS06hOyBCjifZXUkzKDen?usp=share_link -->
+
     <br />
     <!-- <Banner color="tertiary">Event Gallery</Banner> -->
     <img src="./../assets/EventGallery.jpeg" alt="Event Gallery" />

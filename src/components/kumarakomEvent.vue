@@ -10,7 +10,7 @@
         <h6>(HOTEL LAKESONG, KUMARAKOM, &nbsp; 17TH & 18TH AUGUST 2024)</h6>
       </div>
       <Gallery></Gallery>
-      <div v-if="false">
+      <!-- <div v-if="false">
         NAME: DESIGNATION: AGE: SEX: INSTITUTION: WHATSAPP NUMBER: PHONE:
         E-MAIL: FOOD PREFERENCE: Veg Non-Veg
       </div>
@@ -92,7 +92,7 @@
             >Download the Registration Form</a
           >
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
