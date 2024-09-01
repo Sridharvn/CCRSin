@@ -6,6 +6,7 @@
     <!-- <Banner color="tertiary">Event Gallery</Banner> -->
     <img src="./../assets/EventGallery.jpeg" alt="Event Gallery" />
     <br />
+
     <div class="galleryWrapper">
       <div
         class="galleryDayWrapper"
@@ -37,6 +38,11 @@
 import imageDirectory from "./data/eventGallery.ts";
 
 export default {
+  data() {
+    return {
+      imageDirectory: imageDirectory,
+    };
+  },
   methods: {
     getImage(gDriveUrl) {
       let fileId = gDriveUrl.split("/")[5]; // Extracts the file ID from the URL
