@@ -4,7 +4,11 @@
 
     <br />
     <!-- <Banner color="tertiary">Event Gallery</Banner> -->
-    <img src="./../assets/EventGallery.jpeg" alt="Event Gallery" />
+    <img
+      src="./../assets/EventGallery.jpeg"
+      alt="Event Gallery"
+      class="headerImage"
+    />
     <br />
 
     <div class="galleryWrapper">
@@ -52,24 +56,83 @@ export default {
 };
 </script>
 <style scoped>
+* {
+  /* outline: 1px solid red; */
+}
+/* .headerImage{ */
+.headerImage {
+  width: 100%;
+  height: auto;
+  max-width: fit-content;
+}
+/* } */
 .galleryButton {
-  @apply p-2 bg-text-primary2  text-white m-3 w-56 text-center rounded-lg transition-all mb-12 mt-6 font-bold text-xl;
-  @apply hover:bg-text-primary;
+  padding: 0.5rem;
+  background-color: #2b6cb0;
+  color: #fff;
+  margin: 0.75rem;
+  width: 14rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  transition: all 0.3s;
+  font-weight: bold;
+  font-size: 1.5rem;
 }
+a {
+  text-decoration: none;
+  color: white !important;
+}
+
+.galleryButton:hover {
+  background-color: #3182ce;
+}
+
 .galleryDayWrapper {
-  @apply flex flex-col-reverse justify-center items-center;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
 }
+
 .galleryImage img {
-  @apply rounded-xl;
+  border-radius: 0.5rem;
+  width: 80%;
 }
+
 .galleryImages {
-  @apply flex flex-wrap gap-5 justify-center items-center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  justify-content: center;
+  align-items: center;
 }
+
 .galleryImageItem {
-  @apply h-64 w-96;
-  @apply max-sm:h-[230px] max-sm:w-[340px];
+  height: 16rem;
+  width: 24rem;
+  max-height: 230px;
+  max-width: 340px;
 }
+
 .galleryWrapper {
-  @apply flex justify-center flex-col items-center  shadow-xl gap-12;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
+  gap: 3rem;
+}
+
+@media (max-width: 640px) {
+  .galleryButton {
+    width: 10rem;
+  }
+
+  .galleryImageItem {
+    height: 12rem;
+    width: 18rem;
+    max-height: 180px;
+    max-width: 280px;
+  }
 }
 </style>
